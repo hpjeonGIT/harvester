@@ -14,10 +14,19 @@
   - Per requests, more taylor/customization is possible but note that this tool is for quick-check. Any sophisticated features of dashboard would be featured in Python Bokeh dashboard
 
 # Sample run
-- mkdir TEST
-- cd TEST
-- python3 ../seeder.py # This will produce 100 folders with randomized results
-- cd ..
-- python3 ./harverster.py --path ./TEST # this will produce all_summary.json and list_broken.json at TEST folder
+- `mkdir TEST`
+- `cd TEST`
+- `python3 ../seeder.py` # This will produce 100 folders with randomized results
+- `cd ..`
+- `python3 ./harverster.py --path ./TEST` # this will produce all_summary.json and list_broken.json at TEST folder
+- Use `--overwrite yes` to rewrite results
 <img src="./snapshot_curses.png" height="200">
 - Press 'q' to exit the dashboard
+
+## Using Bokeh for visualization
+- Using TEST folder above
+- `python3 harvester_bokeh.py  --path ./TEST` # as same as curses python script, this will produce all_summary.json and list_broken.json at TEST folder
+- Use `--overwrite yes` to rewrite results
+<img src="./harvester_bokeh.png" height="300">
+
+

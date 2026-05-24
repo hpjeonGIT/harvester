@@ -161,6 +161,14 @@ def draw_menu(stdscr):
             fwin.current_row += 1
         elif k == "KEY_UP" and fwin.current_row > 0:
             fwin.current_row -= 1
+        elif k == "KEY_PPAGE":
+            if fwin.current_row > h_file:
+                fwin.current_row -= h_file
+            else:
+                fwin.current_row = 0
+        elif k == "KEY_NPAGE":
+            if fwin.current_row < (Results.n_row - h_file):
+                fwin.current_row += h_file
         fwin.rf()
  
 def visualize():
