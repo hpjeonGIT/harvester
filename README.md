@@ -30,8 +30,8 @@
 <img src="./harvester_bokeh.png" height="300">
 
 
-# Same run with NxN cases
-- May produce tests sets of X vs Y such as t00x00, t00x01, ... t99x99
+# Sample run with NxN cases
+- May visualize tests sets of X vs Y such as t00x00, t00x01, ... t99x99
 - `seeder_nxn.py` will produce such sets
 ```bash
 $ mkdir NxN; cd NxN
